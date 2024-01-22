@@ -1,0 +1,40 @@
+/* @media (max-width: 991px) {} */
+
+@media (max-width: 991px) {
+
+  .padding-section-x-40 {
+    padding-inline: 20px;
+  }
+
+  .padding-section-y-40 {
+    padding-block: 40px;
+  }
+
+  .nav-logo-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none !important;
+  }
+
+  .nav-link {
+    height: 50px;
+  }
+
+  .nav-link:hover {
+    border-bottom: 2px solid transparent;
+  }
+
+  .spacer-navbar {
+    padding-top: 6rem;
+  }
+
+  .pro-img-wrap {
+    filter: blur(0px);
+  }
+
+}

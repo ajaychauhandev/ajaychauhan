@@ -1,0 +1,19 @@
+@media (max-width: 767px) {
+
+  .padding-section-x-40 {
+    padding-inline: 10px;
+  }
+
+  .padding-section-y-40 {
+    padding-block: 20px;
+  }
+
+  .collapse-card-content {
+    padding: 20px 10px;
+  }
+
+
+  .pro-img-wrap {
+    filter: blur(0px);
+  }
+}
