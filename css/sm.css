@@ -9,11 +9,15 @@
   }
 
   .collapse-card-content {
-    padding: 20px 10px;
+    padding: 20px 20px;
   }
-
 
   .pro-img-wrap {
     filter: blur(0px);
+  }
+
+  .nav-link {
+    height: 50px;
+    width: 100%;
   }
 }

@@ -23,6 +23,7 @@
 
   .nav-link {
     height: 50px;
+    width: 100%;
   }
 
   .nav-link:hover {
