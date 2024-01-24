@@ -374,7 +374,7 @@ hr {
 
 /* Animate Lottie Infite */
 .hero-blogging-lottie {
-  animation: moveInfinite 50s ease infinite;
+  animation: moveInfinite 60s ease infinite;
 }
 
 
@@ -383,58 +383,58 @@ hr {
   /** from center point */
   0% {
     transform: translate(0, 0);
-    scale: 1;
+    scale: 1.5;
   }
 
   10% {
-    transform: translate(-50px, 50px);
-    scale: 0.8;
+    transform: translate(-30px, 30px);
+    scale: 1;
   }
 
   20% {
-    transform: translate(80px, -80px);
-    scale: 0.7;
+    transform: translate(60px, -60px);
+    scale: 0.9;
   }
 
   30% {
-    transform: translate(-150px, 0px);
-    scale: 0.5;
+    transform: translate(-100px, -20px);
+    scale: 0.7;
   }
 
   40% {
-    transform: translate(300px, -200px);
-    scale: 0.3;
+    transform: translate(100px, -80px);
+    scale: 0.5;
   }
 
   50% {
-    transform: translate(-100px, -80px);
-    scale: 0.6;
+    transform: translate(-70px, 10px);
+    scale: 0.8;
 
   }
 
   60% {
-    transform: translate(-50px, 45px);
-    scale: 0.8;
+    transform: translate(0px, 0px);
+    scale: 1.3;
   }
 
   70% {
-    transform: translate(50px, -100px);
+    transform: translate(30px, -80px);
     scale: 0.2;
   }
 
   80% {
-    transform: translate(100px, 100px);
-    scale: 0.3;
+    transform: translate(120px, 100px);
+    scale: 0.5;
   }
 
   90% {
-    transform: translate(-10px, -34px);
-    scale: 0.7;
+    transform: translate(-50px, 0px);
+    scale: 0.9;
   }
 
   100% {
     transform: translate(0px, 0px);
-    scale: 1;
+    scale: 1.5;
   }
 }
 
