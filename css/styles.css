@@ -329,6 +329,7 @@ hr {
   justify-content: center;
   align-items: center;
   border-bottom: 2px solid transparent;
+  transition: all 0.5s;
 }
 
 .nav-link:hover {
@@ -476,6 +477,7 @@ hr {
   /* max-width: 100px; */
   object-position: center;
   object-fit: cover;
+  max-width: 200px;
 }
 
 .pro-img-wrap {
@@ -485,6 +487,7 @@ hr {
   justify-content: center;
   transition: all .6s ease;
   filter: blur(8px);
+  border-radius: 15px;
 }
 
 .pro-img-wrap:hover {

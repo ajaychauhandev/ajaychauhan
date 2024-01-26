@@ -18,7 +18,7 @@
 </head>
 <body data-bs-theme="dark">
 
-  <div class="page-wrapper position-relative">
+  <div id="page-wrapper" class="page-wrapper position-relative">
 
     <div id="navbar-wrap-id" class="navbar-wrap wow fadeInUp" data-wow-delay="0s">
       <nav class=" navbar navbar-expand-lg shadow-sm ">
@@ -43,7 +43,7 @@
               <div class="me-auto"></div>
               <ul class="navbar-nav align-items-center mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#sect-hero-id">Home</a>
+                  <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" aria-current="page" href="./projects.html">Projects</a>
@@ -82,9 +82,9 @@
     </div>
 
     <main class="main-wrapper">
+      <div class="spacer-navbar"></div>
 
       <section class="section_home-hero overflow-hidden pb-4 pb-md-0" id="sect-hero-id">
-        <div class="spacer-navbar"></div>
         <div class="w-full padding-section-x-40 padding-section-y-40">
           <div class="container">
             <div class="row row-cols-1 row-cols-md-2 ">
@@ -455,6 +455,18 @@
           </div>
         </div>
       </section>
+
+      <div class="goto-top">
+        <a href="#page-wrapper" class="goto-top-link d-flex-center">
+          <svg width="20" height="20" fill="currentColor" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-97uydn"
+            focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="KeyboardArrowUpRoundedIcon">
+            <path
+              d="M8.12 14.71 12 10.83l3.88 3.88c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L12.7 8.71a.9959.9959 0 0 0-1.41 0L6.7 13.3c-.39.39-.39 1.02 0 1.41.39.38 1.03.39 1.42 0">
+            </path>
+          </svg>
+        </a>
+      </div>
+
 
     </main>
   </div>
