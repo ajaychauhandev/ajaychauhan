@@ -374,7 +374,7 @@ hr {
 
 /* Animate Lottie Infite */
 .hero-blogging-lottie {
-  animation: moveInfinite 60s ease infinite;
+  /* animation: moveInfinite1 60s ease infinite; */
 }
 
 

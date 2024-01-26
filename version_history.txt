@@ -1,0 +1,10 @@
+================
+v0.0.1
+================
+D- Created website and published on github and bought domain.
+-
+================
+v0.0.2
+================
+D- removed animation of hero image
+- add goToTop button
