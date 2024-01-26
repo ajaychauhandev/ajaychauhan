@@ -527,6 +527,7 @@ hr {
   color: #004C99;
   background-color: #c2e0ff;
   border-radius: 50%;
+  z-index: 999;
 }
 
 .goto-top-link:hover {
