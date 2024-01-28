@@ -7,4 +7,9 @@ D- Created website and published on github and bought domain.
 v0.0.2
 ================
 D- removed animation of hero image
-- add goToTop button
+D- add goToTop button
+
+================
+v0.0.3
+================
+- update nav animation slide up/down on window scroll up/down
