@@ -456,7 +456,7 @@
         </div>
       </section>
 
-      <div class="goto-top">
+      <div id="goto-top-id" class="goto-top">
         <a href="#page-wrapper" class="goto-top-link d-flex-center">
           <svg width="20" height="20" fill="currentColor" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-97uydn"
             focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="KeyboardArrowUpRoundedIcon">
@@ -519,10 +519,18 @@
     document.addEventListener("DOMContentLoaded", function () {
       var navbar = document.getElementById("navbar-wrap-id");
       var heroSection = document.getElementById("sect-hero-id");
+      var gotoTop = document.getElementById("goto-top-id");
       var lastScrollTop = 0;
-      // while nav scroll
+
+      gotoTop.style.display = 'none';
+
       window.addEventListener("scroll", function () {
         var st = window.scrollY;
+        if (st > 100) {
+          gotoTop.style.display = 'block';
+        } else {
+          gotoTop.style.display = 'none';
+        }
 
         if (st < lastScrollTop || st < heroSection.offsetHeight) {
           navbar.style.transform = "translateY(0)";
