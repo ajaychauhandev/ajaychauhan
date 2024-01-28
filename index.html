@@ -522,13 +522,6 @@
       var lastScrollTop = 0;
 
       window.addEventListener("scroll", function () {
-
-        if (window.scrollY <= 0) {
-          navbar.style.borderBottom = "1px solid transparent";
-        } else {
-          navbar.style.borderBottom = "1px solid #3399ff44";
-        }
-
         var st = window.scrollY;
 
         if (st < lastScrollTop || st < heroSection.offsetHeight) {

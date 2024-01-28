@@ -93,7 +93,7 @@ body {
   .navbar {
     background-color: rgb(var(--nav-bg-color), 0.7) !important;
     backdrop-filter: blur(8px) !important;
-    /* border-bottom: 1px solid var(--dark-hline-color); */
+    border-bottom: 1px solid var(--dark-hline-color);
   }
 
   .navbar .nav-link,
