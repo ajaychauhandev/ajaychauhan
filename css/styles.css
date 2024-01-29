@@ -512,6 +512,18 @@ hr {
 }
 
 /* section-footer */
+
+section.section-footer::before {
+  content: '';
+  background: url(../images/wave-blue.svg) no-repeat;
+  position: absolute;
+  height: 5rem;
+  width: 100%;
+  z-index: -1;
+  margin-top: -80px;
+}
+
+
 .hline {
   height: 1px;
   background-color: var(--dark-hline-color);
