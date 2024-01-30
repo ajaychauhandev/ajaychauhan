@@ -110,6 +110,16 @@ body {
     border-bottom: 2px solid rgba(51, 153, 255, 0.13);
   }
 
+
+  #btnThemeSwitch .icon-day {
+    display: block;
+  }
+
+  #btnThemeSwitch .icon-night {
+    display: none;
+  }
+
+
   /* DARK- collapse */
   .collapse-title-wrap {
     color: #fff !important;
@@ -296,6 +306,10 @@ hr {
   width: 100%;
 }
 
+.navbar-toggler {
+  border: 0px;
+}
+
 .navbar .nav-link,
 .navbar-toggler svg {
   color: #1f2937;
@@ -321,9 +335,6 @@ hr {
   border-bottom: 2px solid black;
 }
 
-.navbar-toggler {
-  border: 0px;
-}
 
 .navbar-brand {
   display: block;
@@ -335,6 +346,16 @@ hr {
 .navbar-brand img {
   width: 100%;
   border-radius: 50%;
+}
+
+
+#btnThemeSwitch .icon-day {
+  display: none;
+}
+
+#btnThemeSwitch .icon-night {
+  display: block;
+  margin-top: 7px;
 }
 
 /* SECTION_HERO */
