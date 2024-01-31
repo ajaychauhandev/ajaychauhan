@@ -401,6 +401,26 @@ hr {
   width: 22px;
 }
 
+
+.contact-lable-wrap {
+  position: absolute;
+  top: -10px;
+  left: 10%;
+  font-family: 'Caveat', cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-lable-wrap img {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .hero-left-top-details,
 .hero-right-lottie-wrap {
   pointer-events: none !important;
