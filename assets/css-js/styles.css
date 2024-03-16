@@ -355,7 +355,6 @@ hr {
 
 #btnThemeSwitch .icon-night {
   display: block;
-  margin-top: 7px;
 }
 
 /* SECTION_HERO */
@@ -539,7 +538,7 @@ hr {
   display: flex;
   justify-content: center;
   transition: all .6s ease;
-  filter: blur(8px);
+  filter: blur(4px);
   border-radius: 15px;
 }
 
