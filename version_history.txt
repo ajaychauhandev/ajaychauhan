@@ -13,3 +13,14 @@ D- add goToTop button
 v0.0.3
 ================
 - update nav animation slide up/down on window scroll up/down
+
+
+================
+v0.0.4
+================
+- added Resource page.
+- update nav menu according.
+- rename page "test3d.html" to "test1.html". It is used to backup 3d view of Depalma Studio.
+- add test2.html page to backup "Insured Roof" website for red practice
+- update order of home nav menu and logo url
+
