@@ -405,6 +405,11 @@ hr {
   width: 22px;
 }
 
+.username {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+}
+
 /* hero- contact label */
 .contact-lable-wrap {
   position: absolute;
