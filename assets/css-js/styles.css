@@ -388,6 +388,15 @@ hr {
   background-color: #000810;
 }
 
+.hero-wrapper {
+    height: 82vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
 .hero-left-details {
   color: white;
 }
