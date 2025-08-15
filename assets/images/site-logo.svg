@@ -1,0 +1,52 @@
+<!-- Rotating gradient border (512x512) -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <!-- Multi-color gradient like your AJ logo -->
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#7a5cff"/>
+      <stop offset="25%"  stop-color="#32c7ff"/>
+      <stop offset="50%"  stop-color="#ff5ac8"/>
+      <stop offset="75%"  stop-color="#ffb155"/>
+      <stop offset="100%" stop-color="#36b5ff"/>
+    </linearGradient>
+  </defs>
+
+  <!-- OPTIONAL: put your center content here -->
+  <!--
+  <image href="./assets/images/site-logo-inner.svg" x="60" y="60" width="390" height="390"/>
+  -->
+  <image
+  href="https://raw.githubusercontent.com/ajaychauhandev/ajaychauhan/refs/heads/main/assets/images/site-logo-inner.png" 
+  x="100" y="100" width="300" height="300"/>
+
+  <!-- Rotating outer border -->
+  <g>
+    <circle cx="256" cy="256" r="210"
+            fill="none"
+            stroke="url(#ringGrad)"
+            stroke-width="10"
+            stroke-linecap="round"
+            stroke-dasharray="140 40 80 30 120 20 60 40">
+      <animateTransform attributeName="transform"
+                        type="rotate"
+                        from="0 256 256" to="360 256 256"
+                        dur="18s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Optional inner counter-rotating ring (uncomment if you want it) -->
+  
+  <g opacity="0.9">
+    <circle cx="256" cy="256" r="180"
+            fill="none"
+            stroke="url(#ringGrad)"
+            stroke-width="10"
+            stroke-linecap="round"
+            stroke-dasharray="90 30 50 40 110 30">
+      <animateTransform attributeName="transform"
+                        type="rotate"
+                        from="360 256 256" to="0 256 256"
+                        dur="12s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>
