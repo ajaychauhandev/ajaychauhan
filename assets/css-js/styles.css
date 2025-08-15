@@ -399,6 +399,15 @@ hr {
 
 .hero-left-details {
   color: white;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-content: flex-start;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+}
+  
 }
 
 .hero-title-wrap {
@@ -449,7 +458,13 @@ hr {
 
 .hero-left-top-details,
 .hero-right-lottie-wrap {
-  pointer-events: none !important;
+    pointer-events: none !important;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;  
 }
 
 /* Animate Lottie Infite */
