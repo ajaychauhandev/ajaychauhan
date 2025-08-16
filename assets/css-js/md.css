@@ -1,7 +1,6 @@
 /* @media (max-width: 991px) {} */
 
 @media (max-width: 991px) {
-
   .padding-section-x-40 {
     padding-inline: 20px;
   }
@@ -38,4 +37,12 @@
     filter: blur(0px);
   }
 
+  .hero-wrapper {
+    height: 82vh;
+    display: flex;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+  }
 }
