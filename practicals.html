@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Practicals</title>
+  <style>
+    :root{
+      --bg:#070b14;
+      --bg2:#0b1220;
+      --card:#0f172a;
+      --card2:#111c33;
+      --text:#e5eefc;
+      --muted:#9aa7bd;
+      --line:rgba(255,255,255,.08);
+      --accent:#7c3aed;
+      --accent2:#22d3ee;
+      --good:#22c55e;
+      --shadow:0 20px 50px rgba(0,0,0,.45);
+      --radius:20px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(124,58,237,.25), transparent 35%),
+        radial-gradient(circle at top right, rgba(34,211,238,.18), transparent 30%),
+        linear-gradient(180deg, var(--bg), var(--bg2));
+      color:var(--text);
+      min-height:100vh;
+    }
+    .wrap{
+      width:min(1200px, calc(100% - 32px));
+      margin:0 auto;
+      padding:32px 0 48px;
+    }
+    .hero{
+      background:linear-gradient(135deg, rgba(124,58,237,.18), rgba(34,211,238,.10));
+      border:1px solid var(--line);
+      border-radius:28px;
+      padding:28px;
+      box-shadow:var(--shadow);
+      backdrop-filter: blur(14px);
+    }
+    .topbar{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      flex-wrap:wrap;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:14px;
+    }
+    .logo{
+      width:52px;height:52px;border-radius:16px;
+      background:linear-gradient(135deg, var(--accent), var(--accent2));
+      box-shadow:0 0 30px rgba(124,58,237,.4);
+    }
+    h1{
+      margin:0;
+      font-size:clamp(28px, 4vw, 44px);
+      line-height:1.05;
+    }
+    .sub{
+      margin:10px 0 0;
+      color:var(--muted);
+      max-width:760px;
+    }
+    .searchRow{
+      margin-top:22px;
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+    .search{
+      flex:1 1 320px;
+      position:relative;
+    }
+    .search input{
+      width:100%;
+      padding:16px 18px 16px 48px;
+      border-radius:16px;
+      border:1px solid var(--line);
+      outline:none;
+      background:rgba(10,15,28,.85);
+      color:var(--text);
+      font-size:15px;
+      box-shadow:inset 0 1px 0 rgba(255,255,255,.03);
+    }
+    .search svg{
+      position:absolute;
+      left:16px;
+      top:50%;
+      transform:translateY(-50%);
+      width:18px;height:18px;
+      fill:var(--muted);
+      pointer-events:none;
+    }
+    .count{
+      display:flex;
+      align-items:center;
+      padding:0 16px;
+      border:1px solid var(--line);
+      border-radius:16px;
+      background:rgba(10,15,28,.65);
+      color:var(--muted);
+      min-height:54px;
+      white-space:nowrap;
+    }
+    .grid{
+      margin-top:24px;
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
+      gap:18px;
+    }
+    .card{
+      background:linear-gradient(180deg, rgba(17,28,51,.96), rgba(10,15,28,.96));
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:20px;
+      box-shadow:var(--shadow);
+      transition:transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+      position:relative;
+      overflow:hidden;
+    }
+    .card:hover{
+      transform:translateY(-4px);
+      border-color:rgba(34,211,238,.35);
+      box-shadow:0 25px 60px rgba(0,0,0,.55);
+    }
+    .card::before{
+      content:"";
+      position:absolute;
+      inset:auto -40px -40px auto;
+      width:120px;height:120px;
+      background:radial-gradient(circle, rgba(124,58,237,.22), transparent 60%);
+      pointer-events:none;
+    }
+    .tag{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      font-size:12px;
+      color:#cbd5e1;
+      background:rgba(255,255,255,.05);
+      border:1px solid var(--line);
+      border-radius:999px;
+      padding:7px 10px;
+      margin-bottom:14px;
+    }
+    .title{
+      margin:0 0 10px;
+      font-size:20px;
+    }
+    .desc{
+      margin:0 0 18px;
+      color:var(--muted);
+      font-size:14px;
+      line-height:1.6;
+      min-height:44px;
+    }
+    .meta{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+    a.btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      text-decoration:none;
+      color:#08111f;
+      background:linear-gradient(135deg, var(--accent2), #60a5fa);
+      font-weight:700;
+      padding:10px 14px;
+      border-radius:12px;
+      transition:filter .2s ease, transform .2s ease;
+    }
+    a.btn:hover{filter:brightness(1.06);transform:translateY(-1px)}
+    .small{
+      color:var(--muted);
+      font-size:13px;
+    }
+    .hidden{display:none}
+    .empty{
+      margin-top:24px;
+      padding:26px;
+      text-align:center;
+      color:var(--muted);
+      border:1px dashed var(--line);
+      border-radius:20px;
+      background:rgba(255,255,255,.02);
+    }
+    @media (max-width:640px){
+      .hero{padding:20px}
+      .count{width:100%;justify-content:center}
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <div class="topbar">
+        <div class="brand">
+          <div class="logo"></div>
+          <div>
+            <h1>Practicals</h1>
+            <p class="sub">Search practicals</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="searchRow">
+        <div class="search">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 4a6 6 0 104.47 10.03l4.25 4.25 1.42-1.42-4.25-4.25A6 6 0 0010 4zm0 2a4 4 0 110 8 4 4 0 010-8z"/></svg>
+          <input id="searchInput" type="text" placeholder="Search practicals, tags, or descriptions..." />
+        </div>
+        <div class="count" id="countBox">0 items</div>
+      </div>
+    </section>
+
+    <section class="grid" id="cardsGrid">
+
+      <article class="card" data-search="swiper slick splide slider animation carousel">
+        <div class="tag">Practicals</div>
+        <h3 class="title">Webflow Practicals</h3>
+        <p class="desc">This includesall practicals of webflow using html/css/js and other usefull libraries</p>
+        <div class="meta">
+          <span class="small">Practical 01</span>
+          <a class="btn" href="https://ajaynote.notion.site/Practicals-aa5dcbeb89504aaab061c9832878eaea" target="_blank" rel="noopener">Open</a>
+        </div>
+      </article>
+
+      <article class="card" data-search="swiper slick splide slider animation carousel">
+        <div class="tag">Demo Cat</div>
+        <h3 class="title">Demo Cat</h3>
+        <p class="desc">Demo Cat</p>
+        <div class="meta">
+          <span class="small">Practical 02</span>
+          <a class="btn" href="#" target="_blank" rel="noopener">Open</a>
+        </div>
+      </article>
+
+
+    </section>
+
+    <div class="empty hidden" id="emptyState">No matching practicals found.</div>
+  </main>
+
+  <script>
+    const input = document.getElementById('searchInput');
+    const cards = Array.from(document.querySelectorAll('.card'));
+    const countBox = document.getElementById('countBox');
+    const emptyState = document.getElementById('emptyState');
+
+    function filterCards() {
+      const query = input.value.trim().toLowerCase();
+      let visible = 0;
+
+      cards.forEach(card => {
+        const text = card.dataset.search.toLowerCase() + ' ' + card.innerText.toLowerCase();
+        const match = text.includes(query);
+        card.classList.toggle('hidden', !match);
+        if (match) visible++;
+      });
+
+      countBox.textContent = `${visible} item${visible !== 1 ? 's' : ''}`;
+      emptyState.classList.toggle('hidden', visible !== 0);
+    }
+
+    input.addEventListener('input', filterCards);
+    filterCards();
+  </script>
+</body>
+</html>
