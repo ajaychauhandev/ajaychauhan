@@ -481,6 +481,19 @@ hr {
   overflow: hidden;
   background-color: #000810;
 }
+.hero-wrap {
+  position: relative;
+  z-index: 2;
+}
+
+.hero_bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: auto;
+  z-index: 1;
+  max-height: 600px;
+}
 
 .hero-wrapper {
   height: 82vh;
